@@ -1,6 +1,5 @@
 package test;
 
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import data.DataHelper;
@@ -8,10 +7,6 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 import pages.MainPage;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 import static org.junit.jupiter.api.Assertions.assertAll;
