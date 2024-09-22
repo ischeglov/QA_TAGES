@@ -1,3 +1,5 @@
+[![Java CI with Gradle](https://github.com/ischeglov/QA_TAGES/actions/workflows/gradle.yml/badge.svg)](https://github.com/ischeglov/QA_TAGES/actions/workflows/gradle.yml)
+
 ## Задача
 
 Покрыть автотестами главную страницу [TAGES](https://tages.ru/)
@@ -25,12 +27,6 @@ git clone git@github.com:ischeglov/QA_TAGES.git
  ```
 ./gradlew clean test
 ```
-### Остановка, перезапуск тестов и приложения
-
-Для остановки приложения в окне терминала ввести команду 
-`Ctrl+С`
-
-Для перезапуска приложения повторить необходимые действия из предыдущих разделов.
 
 ### Формирование отчёта
 
