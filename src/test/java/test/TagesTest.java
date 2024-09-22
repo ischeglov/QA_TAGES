@@ -123,10 +123,10 @@ public class TagesTest {
     @Test
     public void test1_5_unsuccessfulSubmissionFeedbackFormsWithoutPhoneNumber() {
         var name = DataHelper.getValidName();
-        var phone = DataHelper.getValidPhoneNumber();
         var company = DataHelper.getValidCompany();
+        var email = DataHelper.getValidEmail();
         var comment = DataHelper.getValidComment();
-        var formInfo = new DataHelper.FeedbackFormInfo(name, phone, company, "email", comment);
+        var formInfo = new DataHelper.FeedbackFormInfo(name, "", company, email, comment);
         var mainPage = new MainPage();
 
         step("Отправляем запрос обратной связи", () -> {
@@ -145,10 +145,10 @@ public class TagesTest {
     @Test
     public void test1_6_unsuccessfulSubmissionFeedbackFormsWithoutEmail() {
         var name = DataHelper.getValidName();
+        var phone = DataHelper.getValidPhoneNumber();
         var company = DataHelper.getValidCompany();
-        var email = DataHelper.getValidEmail();
         var comment = DataHelper.getValidComment();
-        var formInfo = new DataHelper.FeedbackFormInfo(name, "", company, email, comment);
+        var formInfo = new DataHelper.FeedbackFormInfo(name, phone, company, "", comment);
         var mainPage = new MainPage();
 
         step("Отправляем запрос обратной связи", () -> {
